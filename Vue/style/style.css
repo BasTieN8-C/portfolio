@@ -84,8 +84,6 @@ header h1 {
     letter-spacing: 0.5px;
 }
 
-/* Header spécifique à la page d'accueil */
-
 header.hero {
     text-align: center;
     padding: 35px 20px;
@@ -277,7 +275,7 @@ section > h2 {
     text-decoration: underline;
 }
 
-/* Compatibilité avec les anciennes pages de projets */
+/* Compatibilité avec les anciennes pages */
 
 .projet-section {
     background-color: var(--violet-sombre);
@@ -359,7 +357,7 @@ section > h2 {
 }
 
 /* =========================
-   COMPÉTENCES
+   COMPÉTENCES - BOUTONS
 ========================= */
 
 .skills-container {
@@ -370,43 +368,38 @@ section > h2 {
 }
 
 .skill-block {
-    background-color: var(--fond-code);
+    display: block;
+    text-decoration: none;
+    background-color: var(--violet-sombre);
     border: 1px solid rgba(140, 122, 230, 0.2);
+    border-left: 5px solid var(--violet-principal);
     border-radius: 10px;
     padding: 22px;
     transition: var(--transition-douce);
 }
 
 .skill-block:hover {
-    border-color: var(--violet-principal);
-    transform: translateY(-3px);
+    background-color: var(--violet-principal);
+    border-left-color: var(--vert-konoha);
+    transform: translateY(-4px);
+    box-shadow: var(--ombre-portee);
 }
 
 .skill-block h3 {
-    color: var(--violet-hover);
+    color: var(--texte-principal);
     font-size: 1.1rem;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
-.skill-block ul {
-    list-style: none;
-}
-
-.skill-block li {
+.skill-block p {
     color: var(--texte-secondaire);
-    padding: 6px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    margin: 0;
+    font-size: 0.95rem;
 }
 
-.skill-block li:last-child {
-    border-bottom: none;
-}
-
-.skill-block li::before {
-    content: "›";
-    color: var(--vert-konoha);
-    font-weight: bold;
-    margin-right: 10px;
+.skill-block:hover h3,
+.skill-block:hover p {
+    color: var(--texte-principal);
 }
 
 /* =========================
@@ -449,7 +442,7 @@ section > h2 {
 }
 
 /* =========================
-   NAVIGATION DES ANCIENNES PAGES
+   NAVIGATION ANCIENNES PAGES
 ========================= */
 
 .navigation-retour {
