@@ -1,0 +1,214 @@
+:root {
+    --violet-principal: #8c7ae6;
+    --violet-sombre: #2f2542;
+    --violet-hover: #9c88ff;
+    --vert-konoha: #2ec4b6;
+    
+    --fond-page: #0f0e17;
+    --fond-carte: #1b1b2f;
+    --fond-code: #161625;
+    
+    --texte-principal: #fffffe;
+    --texte-secondaire: #a7a9be;
+    
+    --ombre-portee: 0 8px 24px rgba(140, 122, 230, 0.15);
+    --transition-douce: all 0.3s ease;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--fond-page);
+    color: var(--texte-principal);
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-content-wrapper {
+    max-width: 900px;
+    width: 100%;
+    background-color: var(--fond-carte);
+    border-radius: 16px;
+    padding: 40px;
+    border: 1px solid rgba(140, 122, 230, 0.2);
+    box-shadow: var(--ombre-portee);
+}
+
+.navigation-retour {
+    margin-bottom: 25px;
+}
+
+.navigation-retour a {
+    color: var(--violet-principal);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    display: inline-block;
+    transition: var(--transition-douce);
+}
+
+.navigation-retour a:hover {
+    color: var(--vert-konoha);
+    transform: translateX(-5px);
+}
+
+header h1 {
+    color: var(--texte-principal);
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-bottom: 3px solid var(--violet-principal);
+    padding-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+h2 {
+    color: var(--violet-principal);
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: var(--texte-principal);
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+}
+
+.presentation-section, 
+.apropos-section {
+    color: var(--texte-secondaire);
+    margin-bottom: 25px;
+}
+
+.presentation-section p, 
+.apropos-section p {
+    margin-bottom: 12px;
+    font-size: 1.05rem;
+}
+
+.projet-section {
+    background-color: var(--violet-sombre);
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    border-left: 5px solid var(--violet-principal);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: var(--transition-douce);
+}
+
+.projet-section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(140, 122, 230, 0.25);
+    border-left-color: var(--vert-konoha);
+}
+
+.projet-section p {
+    color: var(--texte-secondaire);
+    margin-bottom: 12px;
+}
+
+.projet-section ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+    color: var(--texte-secondaire);
+}
+
+.projet-section li {
+    margin-bottom: 6px;
+}
+
+.projet-section strong {
+    color: var(--texte-principal);
+}
+
+.projet-section img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 12px 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: var(--fond-code);
+    display: block;
+    transition: var(--transition-douce);
+}
+
+.projet-section img:hover {
+    border-color: var(--violet-principal);
+    transform: scale(1.01);
+}
+
+.apropos-section {
+    background-color: var(--fond-code);
+    padding: 20px 25px;
+    border-radius: 10px;
+    border: 1px dashed var(--violet-principal);
+}
+
+@media (max-width: 600px) {
+    .main-content-wrapper {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .projet-section {
+        padding: 18px;
+    }
+}
+
+/* Aligner le logo et le titre */
+header h1 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.titre-logo {
+    height: 1.2em;
+    width: auto;
+}
+
+/* Supprimer les puces de la liste */
+.columns-container ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+}
+
+.columns-container li {
+    margin-bottom: 12px;
+}
+
+/* Rendre les liens lisibles sous forme de boutons */
+.columns-container a {
+    display: block;
+    padding: 12px 18px;
+    background-color: var(--violet-sombre, #2f2542);
+    color: #ffffff; /* Texte blanc bien lisible */
+    text-decoration: none;
+    border-radius: 8px;
+    border-left: 4px solid var(--violet-principal, #8c7ae6);
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+/* Effet au survol */
+.columns-container a:hover {
+    background-color: var(--violet-principal, #8c7ae6);
+    border-left-color: var(--vert-konoha, #2ec4b6);
+    transform: translateX(6px);
+}
