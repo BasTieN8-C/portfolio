@@ -1,40 +1,252 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Projet Professionnel et Personnel</title>
+
+    <title>Bastien Cantoni | Portfolio Informatique</title>
 
     <link rel="icon" type="image/png" href="Vue/image/logo.png">
-
     <link rel="stylesheet" href="Vue/style/style.css">
 </head>
+
 <body>
 
     <div class="main-content-wrapper">
         <div class="jersey-pattern"></div>
-        
-        <header>
-            <h1>Projet Professionnel et Personnel</h1>
+
+        <!-- En-tête -->
+        <header class="hero">
+            <h1>Bastien Cantoni</h1>
+
+            <h2>Étudiant en 3e année de BUT Informatique</h2>
+
+            <p>
+                Développement web et logiciel, conception d'applications,
+                gestion de données et mise en œuvre de solutions techniques.
+            </p>
+
+            <div class="hero-actions">
+                <a href="#projets" class="button">Voir mes projets</a>
+                <a href="#contact" class="button">Me contacter</a>
+            </div>
         </header>
 
+        <!-- Présentation -->
         <section class="presentation-section">
             <p>
-                <b>Bienvenue sur mon Portfolio !</b> Ici, je vais présenter les compétences techniques 
-                et les différents langages que j'ai étudiés durant mes 3 ans au BUT Informatique du Havre
+                <b>Bienvenue sur mon portfolio.</b>
+                Retrouvez ici les projets réalisés durant ma formation au
+                BUT Informatique de l'IUT du Havre, ainsi que les compétences
+                techniques que j'ai développées.
             </p>
         </section>
 
-        <main class="columns-container">
-            <nav class="column left-column">
+        <main>
+
+            <!-- Projets -->
+            <section id="projets" class="projects-section">
+                <h2>Projets phares</h2>
+
+                <div class="projects-container">
+
+                    <!-- Stage Agence Graffiti -->
+                    <article class="project-card">
+                        <h3>Stage — Agence Graffiti</h3>
+
+                        <p class="project-context">
+                            Stage en développement web
+                        </p>
+
+                        <p>
+                            Développement et refonte de sites web sous WordPress,
+                            création et gestion de contenus personnalisés,
+                            sécurisation d'uploads de fichiers et gestion
+                            des déploiements.
+                        </p>
+
+                        <h4>Technologies</h4>
+                        <p class="project-technologies">
+                            WordPress, PHP, CPT, WP_Query, plugins,
+                            Git, FTP
+                        </p>
+
+                        <a href="https://github.com/BasTieN8-C"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Voir mon GitHub
+                        </a>
+                    </article>
+
+                    <!-- SAÉ Parcoursup -->
+                    <article class="project-card">
+                        <h3>SAÉ — Application Web Parcoursup</h3>
+
+                        <p class="project-context">
+                            Projet universitaire — IUT du Havre
+                        </p>
+
+                        <p>
+                            Développement d'une application web permettant
+                            d'importer des fichiers Excel et Google Sheets,
+                            de générer automatiquement une base de données,
+                            de géolocaliser des données et de faciliter
+                            le tri des profils grâce à des groupes.
+                        </p>
+
+                        <h4>Technologies</h4>
+                        <p class="project-technologies">
+                            PHP, JavaScript, HTML5, CSS3, SQL,
+                            API du gouvernement, import de données
+                        </p>
+
+                        <a href="https://github.com/BasTieN8-C"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Voir mon GitHub
+                        </a>
+                    </article>
+
+                    <!-- SAÉ Rétroconception Java -->
+                    <article class="project-card">
+                        <h3>SAÉ — Outil de rétroconception Java</h3>
+
+                        <p class="project-context">
+                            Projet universitaire — IUT du Havre
+                        </p>
+
+                        <p>
+                            Création d'un outil analysant des dossiers
+                            de fichiers Java afin d'extraire les classes
+                            et leurs relations, puis de générer une
+                            représentation sous forme de diagramme de classes.
+                            L'application repose sur une architecture MVC.
+                        </p>
+
+                        <h4>Technologies</h4>
+                        <p class="project-technologies">
+                            Java, POO, architecture MVC,
+                            analyse de fichiers, diagrammes de classes
+                        </p>
+
+                        <a href="https://github.com/BasTieN8-C"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Voir mon GitHub
+                        </a>
+                    </article>
+
+                </div>
+            </section>
+
+            <!-- À propos -->
+            <section id="about" class="about-section">
+                <h2>À propos</h2>
+
+                <p>
+                    Je suis étudiant en troisième année de BUT Informatique
+                    à l'IUT du Havre. Ma formation m'a permis de travailler
+                    sur des projets web et logiciels, de la conception
+                    à l'implémentation, en passant par la gestion des données
+                    et l'organisation du code.
+                </p>
+
+                <p>
+                    Je sais avancer de manière autonome sur les tâches qui
+                    me sont confiées, tout en travaillant avec une équipe,
+                    en partageant les solutions et en adaptant mon approche
+                    aux contraintes du projet.
+                </p>
+            </section>
+
+            <!-- Compétences -->
+            <section id="competences" class="skills-section">
+                <h2>Compétences</h2>
+
+                <div class="skills-container">
+
+                    <div class="skill-block">
+                        <h3>Développement web</h3>
+                        <ul>
+                            <li>HTML5 &amp; CSS3</li>
+                            <li>JavaScript &amp; JSX</li>
+                            <li>PHP</li>
+                            <li>WordPress</li>
+                            <li>CPT, WP_Query &amp; plugins</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-block">
+                        <h3>Développement logiciel</h3>
+                        <ul>
+                            <li>Java</li>
+                            <li>Programmation orientée objet</li>
+                            <li>Architecture MVC</li>
+                            <li>Analyse et conception logicielle</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-block">
+                        <h3>Données &amp; API</h3>
+                        <ul>
+                            <li>SQL &amp; bases relationnelles</li>
+                            <li>Utilisation d'API</li>
+                            <li>API du gouvernement</li>
+                            <li>Import / export de données</li>
+                            <li>Excel &amp; Google Sheets</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-block">
+                        <h3>Outils &amp; méthodes</h3>
+                        <ul>
+                            <li>Git &amp; GitHub</li>
+                            <li>FTP &amp; gestion de fichiers</li>
+                            <li>Autonomie</li>
+                            <li>Travail en équipe</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Contact -->
+            <section id="contact" class="contact-section">
+                <h2>Contact</h2>
+
+                <p>
+                    Pour me contacter ou consulter mes projets :
+                </p>
+
                 <ul>
-                    <li><a href="Vue/languageFrontOffice.html">Langages Web FrontOffice</a></li>
-                    <li><a href="Vue/languageBackOffice.html" >Langages Web BackOffice</a></li>
-                    <li><a href="Vue/languageAppli.html"      >Langages de programmation Application</a></li>
-                    <li><a href="Vue/autre.html"              >Page d'explication en bonus</a></li>
+                    <li>
+                        Email :
+                        <a href="mailto:bcantoni2006@gmail.com">
+                            bcantoni2006@gmail.com
+                        </a>
+                    </li>
+
+                    <li>
+                        GitHub :
+                        <a href="https://github.com/BasTieN8-C"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            BasTieN8-C
+                        </a>
+                    </li>
                 </ul>
-            </nav>
+            </section>
+
         </main>
+
+        <!-- Pied de page -->
+        <footer>
+            <p>
+                &copy; 2026 Bastien Cantoni — Portfolio Informatique
+            </p>
+        </footer>
+
     </div>
 
 </body>
